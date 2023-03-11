@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <h2>CSS Selectors</h2>
+    <section id="sec1">
+        <div>
+        <form action="">
+            <h3>Register Form</h3>
+            <label for="firstname" style="color: blue;">First name:</label>
+            <br>
+            <input type="text" size="30" id="firstname" class="black" placeholder="Enter a name..." required>
+            <br><br>
+            <label for="lastname" style="color: green;">Last name:</label>
+            <br>
+            <input type="text" size="30" id="lastname" class="black" placeholder="Enter a surname..." required>
+            <br><br>
+            <label for="email" style="color: blueviolet;">Email:</label>
+            <br>
+            <input type="email" size="30" id="email" class="black" placeholder="Enter an email..." required>
+            <br><br>
+            <label for="password" style="color: yellow;">Password:</label>
+            <br>
+            <input type="password" size="30" id="password" class="black" placeholder="Enter a password..." required>
+            <br><br>
+            <input type="checkbox" name="accept" id="accept" required>
+            <label for="accept">Accept all requirments</label>
+            <br><br>
+            <input type="radio" name="r" id="teacher">
+            <label for="teacher">Teacher</label>
+            <input type="radio" name="r" id="student">
+            <label for="student">Student</label>
+            <input type="radio" name="r" id="other">
+            <label for="other">Other</label>
+            <br><br>
+            <button type="submit" class="signin">Sign in</button>
+            <br><br>
+            <p>Register maybe later:<a href="#sec2">Skip</a></p>
+        </div>
+            <img src="./WhatsApp Image 2023-03-09 at 12.52.23.jpeg" width="350" class="b" alt="">
+        </form>
+    </section>
+    <section id="sec2">
+        <form action="">
+            <h3>User Info</h3>
+            <br>
+            <p><b>Who are you?</b></p>
+            <br>
+            <textarea name="" id="" cols="50" rows="10" required placeholder="Add some info about yourself..."></textarea>
+            <br><br>
+            <input type="file" name="" id="">
+            <br><br>
+            <label for="" style="color: blueviolet;">Choose date:</label>
+            <input type="date" name="" id="">
+            <br><br>
+            <label for="" style="color: brown;">Age:</label>
+            <input type="number">
+            <br><br>
+            <button type="submit" class="save">Save</button>
+            <br><br>
+            <p>Maybe later):<a href="#sec3">Skip</a></p>
+            <br>
+            <p>Go back and sign in <a href="#sec1">Sign in</a></p>
+        </form>
+        <img src="./WhatsApp Image 2023-03-09 at 12.52.23.jpeg" width="350" class="b" alt="">
+    </section>
+    <section id="sec3">
+        <div>
+        <h2>Change tags' color without class name and id.</h2>
+        <br>
+        <p style="color: red">CITIES</p>
+        <br>
+        <ul style="color: green;">
+            <li>Shusha</li>
+            <li>Qusar</li>
+            <li>Baku</li>
+        </ul>
+        <br>
+        <ol type="1">
+            <li>Ismayilli</li>
+            <li>Shamaki</li>
+            <li>Sirvan</li>
+            <li>Qazag</li>
+        </ol>
+        <br>
+        <p style="color: rgb(87, 87, 227);">Lorem.</p>
+        <br>
+        <p>Lorem, ipsum.</p>
+        <br>
+        <p><a href="#sec1">Go back</a> to first section!</p>
+        </div>
+    </section>
+</body>
+</html>

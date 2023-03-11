@@ -1,0 +1,57 @@
+h2 {
+    text-align: center;
+}
+#sec1 {
+    background-color: rgb(125, 130, 162);
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+#sec2 {
+    background-color:rgb(244, 214, 176) ;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+#sec3 {
+    background-color: rgb(134, 134, 229);
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.black:focus::placeholder{
+    color: red;
+}
+.black:focus{
+    background-color: black;
+    color: white;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.signin{
+    color: blue;
+    background-color: rgb(200, 120, 23);
+}
+.signin:hover{
+    color: brown;
+    background-color: bisque;
+}
+.save{
+    background-color: yellowgreen;
+}
+.save:hover{
+    color: brown;
+    background-color: bisque;
+}
+textarea{
+    resize: none;
+}
+#accept{
+    accent-color: green;
+}
