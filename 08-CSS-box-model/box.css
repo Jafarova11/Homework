@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#backimg{
+    background-image: url(./bg.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+section{
+    background-image: url(./bg2.jpg);
+    background-repeat: no-repeat;
+    height: 50vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+footer{
+    background-color: rgb(31, 31, 31);
+    color: rgb(184, 182, 182);
+    height: 70vh;
+}
+footer h3{
+    border-bottom: 2px solid red;
+    width: 30px;
+}
+#lm{
+    border: 1px solid black;
+    padding: 8px;
+    color: bisque;
+    background-color: transparent;
+}
+#head ul li a:hover{
+    background-color: rgb(249, 243, 154);
+    padding: 12px;
+    border-radius: 12%;
+}
+#icons{
+    display: flex;
+    align-content: space-around;
+    margin-right: 30px;
+}
+#icons li{
+    margin: 20px;
+}
+#nav {
+    display: flex;
+    justify-content: space-around;
+}
+#ul4 li a{
+    color: rgb(184, 182, 182);
+}
+#foot ul li:hover{
+    color: white;
+}
+#foot ul li a:hover{
+    color: white;
+}
+h2{
+    color: rgb(237, 173, 173);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+p{
+    color: rgb(232, 220, 220);
+    width: 45%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#texts{
+    /* align-items: center;
+    text-align: left;
+    display: flex; */
+    align-items: center;
+    padding: 90px;
+}
+#texts h2{
+    text-shadow: 2px 2px 3px rgb(189, 131, 244);
+}
+footer{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#foot ul h3{
+    color: white;
+}
+#foot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#foot ul li{
+    margin: 10px;
+}
+#foot ul{
+    margin: 70px;
+}
+.margin{
+    margin: 20px;
+}
+#ul4 li{
+    margin: 0;
+    padding: 0;
+}
