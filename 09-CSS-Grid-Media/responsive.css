@@ -1,0 +1,46 @@
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    column-gap: 200px;
+}
+.img2{
+    display: none;
+}
+.line{
+    position: relative;
+}
+
+h1::after{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    background-color: red;
+    width: 100px;
+    height: 2px;
+}
+p{
+    line-height: 20px;
+    word-spacing: 1px;
+}
+.text{
+    width: 50%;
+    row-gap: 20px;
+}
+@media only screen and (max-width: 768px){
+    .text{
+        background-color: rgb(232, 158, 46);
+    }
+    .img1{
+        display: none;
+    }
+    .img2{
+        display: block;
+        align-items: center;
+    }
+    section{
+        flex-direction: column;
+    }
+}
