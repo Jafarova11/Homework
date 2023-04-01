@@ -1,0 +1,134 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Nanum+Gothic:wght@400;700&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+.container {
+  background-image: url(./bg.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.container nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+  margin-right: 80px;
+}
+.container nav ul li {
+  border: transparent;
+}
+.container nav ul li img {
+  width: 60px;
+}
+.container nav ul li img:hover {
+  border-bottom: 2px solid rgb(104, 4, 4);
+}
+.container nav ul li a {
+  color: white;
+}
+.container nav ul li a:hover {
+  width: 20px;
+  border-bottom: 3px solid rgb(104, 4, 4);
+}
+.container .content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.container .content .text {
+  margin-left: -50px;
+}
+.container .content .text h3 {
+  font-family: "Courgette", cursive;
+  font-size: 20px;
+  color: rgb(135, 98, 52);
+  text-decoration: line-through;
+}
+.container .content .text h1 {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 72px;
+  color: white;
+  margin: 20px 0;
+}
+.container .content .text button {
+  border: transparent;
+  background-color: rgb(135, 98, 52);
+  color: white;
+  padding: 15px 40px;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 16px;
+}
+.container .content .text button a {
+  text-decoration: none;
+  color: white;
+}
+.container .content .text button:hover {
+  background-color: rgb(206, 172, 130);
+}
+.container .content img {
+  width: 30%;
+  position: relative;
+  bottom: -190px;
+  right: 20px;
+}
+.container .content img:hover {
+  transform: translateY(200px);
+  transition-duration: 3s;
+}/*# sourceMappingURL=main.css.map */
