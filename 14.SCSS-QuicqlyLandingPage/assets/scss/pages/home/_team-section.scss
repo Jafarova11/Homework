@@ -1,0 +1,24 @@
+.team {
+  background-color: $hero-color;
+  text-align: center;
+  font-family: $font-family;
+  align-items: center;
+  padding: 30px;
+  .row {
+    .col {
+      text-align: start;
+      padding-left: 2%;
+      &:hover{
+        opacity: 0.5;
+      }
+      .icon {
+        a {
+          border: 1px solid rgb(203, 202, 202);
+          border-radius: 50%;
+          color: $icon-color;
+          padding: 7px 10px;
+        }
+      }
+    }
+  }
+}

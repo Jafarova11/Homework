@@ -1,0 +1,71 @@
+header {
+  height: 75px;
+  width: 100%;
+  background-color: $bg-color;
+  nav {
+    @include flexbox();
+    padding-top: 10px;
+    h3 {
+      color: $text-light;
+      font-family: $font-family;
+      font-size: 24px;
+      font-weight: 700;
+    }
+    ul {
+      @include flexbox();
+      column-gap: 40px;
+      margin-left: 50px;
+      li {
+        a {
+          text-decoration: none;
+          color: $text-light;
+          font-family: $font-family;
+          font-size: 16px;
+          .fa-bars {
+            display: none;
+          }
+        }
+      }
+      @media only screen and (max-width: 767px) {
+        display: none;
+      }
+    }
+    div {
+      @include flexbox();
+      a {
+        .fa-bars {
+          display: none;
+          @media only screen and (max-width: 767px) {
+            display: block;
+            color: $text-light;
+          }
+        }
+      }
+      button {
+        @include buttonpad();
+        border: transparent;
+        border-radius: 8px;
+        a {
+          text-decoration: none;
+          font-size: 14px;
+        }
+        @media only screen and (max-width: 767px) {
+          display: none;
+        }
+
+        .sign-up {
+          background-color: $bg-color;
+          a {
+            color: $color-dark;
+          }
+          .log-in {
+            background-color: transparent;
+            a {
+              color: $text-light;
+            }
+          }
+        }
+      }
+    }
+  }
+}

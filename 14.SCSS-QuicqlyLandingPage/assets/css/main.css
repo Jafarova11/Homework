@@ -1,0 +1,291 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;700&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header nav {
+  margin: 0 20px;
+}
+
+header {
+  height: 75px;
+  width: 100%;
+  background-color: rgb(32, 72, 79);
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+header nav h3 {
+  color: rgb(255, 255, 255);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  margin-left: 50px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+}
+header nav ul li a .fa-bars {
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+  header nav ul {
+    display: none;
+  }
+}
+header nav div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav div a .fa-bars {
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+  header nav div a .fa-bars {
+    display: block;
+    color: rgb(255, 255, 255);
+  }
+}
+header nav div button {
+  padding: 16px 36px 15px 36px;
+  border: transparent;
+  border-radius: 8px;
+}
+header nav div button a {
+  text-decoration: none;
+  font-size: 14px;
+}
+@media only screen and (max-width: 767px) {
+  header nav div button {
+    display: none;
+  }
+}
+header nav div button .sign-up {
+  background-color: rgb(32, 72, 79);
+}
+header nav div button .sign-up a {
+  color: rgb(7, 33, 37);
+}
+header nav div button .sign-up .log-in {
+  background-color: transparent;
+}
+header nav div button .sign-up .log-in a {
+  color: rgb(255, 255, 255);
+}
+
+footer {
+  background-color: rgb(7, 33, 37);
+  color: rgb(255, 255, 255);
+  height: 55vh;
+}
+footer .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  padding: 0 80px;
+}
+footer .top .row {
+  padding-top: 80px;
+}
+footer .top .left {
+  width: 50%;
+}
+footer .top .left h2 {
+  font-size: 30px;
+}
+footer .top .left input {
+  background-color: #b8e4da;
+  color: rgb(32, 72, 79);
+}
+footer .top .left label {
+  font-size: 16px;
+}
+footer .top .left div img {
+  width: 300px;
+}
+footer .top .right .row .col h3 {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+footer .top .right .row .col ul li {
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 16px;
+}
+footer .top .right .row .col ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+footer .top .right .row .col ul li a:hover {
+  text-decoration: underline;
+}
+footer .bottom {
+  height: 50px;
+  text-align: center;
+  font-size: 18px;
+  animation: rotate 2s ease infinite alternate forwards;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(2deg);
+  }
+  50% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(2deg);
+  }
+}
+
+.hero {
+  background-color: rgb(250, 250, 250);
+  height: 100vh;
+  padding: 0 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero .content {
+  position: relative;
+  z-index: 2;
+  row-gap: 50px;
+}
+.hero .content h3 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+.hero .content h1 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  position: relative;
+  z-index: 5;
+}
+.hero .content p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 24px;
+}
+.hero .content img {
+  position: absolute;
+  top: 55px;
+  right: -80px;
+}
+@media only screen and (max-width: 767px) {
+  .hero .content img {
+    display: none;
+  }
+}
+.hero .content button {
+  border: transparent;
+  border-radius: 8px;
+}
+.hero .content button .sign a {
+  background-color: rgb(7, 33, 37);
+  color: rgb(255, 255, 255);
+}
+.hero .content button .learn-more a {
+  background-color: transparent;
+  color: rgb(7, 33, 37);
+}
+.hero .content button a {
+  padding: 16px 36px 15px 36px;
+  text-decoration: none;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 18px;
+}
+@media only screen and (max-width: 767px) {
+  .hero {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 130vh;
+  }
+}
+
+.team {
+  background-color: rgb(250, 250, 250);
+  text-align: center;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  align-items: center;
+  padding: 30px;
+}
+.team .row .col {
+  text-align: start;
+  padding-left: 2%;
+}
+.team .row .col:hover {
+  opacity: 0.5;
+}
+.team .row .col .icon a {
+  border: 1px solid rgb(203, 202, 202);
+  border-radius: 50%;
+  color: #072125;
+  padding: 7px 10px;
+}/*# sourceMappingURL=main.css.map */
