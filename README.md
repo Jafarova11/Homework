@@ -11,4 +11,4 @@
 + 11-ResponsiveTwoSection. https://singular-chimera-36bf7b.netlify.app/
 + 12-Responsive-page. https://lovely-alfajores-ce9eff.netlify.app/
 + 13-SASS-SCSS. https://playful-donut-27f2b0.netlify.app/
-+ 14-SCSS-QuicqlyLandingPage. https://magical-torte-2c86a4.netlify.app/
++ 14-SCSS-QuicqlyLandingPage. https://celebrated-griffin-774f01.netlify.app/
