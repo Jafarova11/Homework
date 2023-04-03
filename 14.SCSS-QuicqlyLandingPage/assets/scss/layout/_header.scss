@@ -1,4 +1,6 @@
 header {
+  position: fixed;
+  z-index: 5;
   height: 75px;
   width: 100%;
   background-color: $bg-color;
@@ -53,17 +55,18 @@ header {
           display: none;
         }
 
-        .sign-up {
-          background-color: $bg-color;
-          a {
-            color: $color-dark;
-          }
-          .log-in {
-            background-color: transparent;
-            a {
-              color: $text-light;
-            }
-          }
+        
+      }
+      .sign-up {
+        background-color: $button-color;
+        a {
+          color: $color-dark;
+        }
+      }
+      .log-in {
+        background-color: transparent;
+        a {
+          color: $text-light;
         }
       }
     }

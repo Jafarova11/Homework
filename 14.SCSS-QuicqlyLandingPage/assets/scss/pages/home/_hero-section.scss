@@ -1,9 +1,10 @@
 .hero {
   background-color: $hero-color;
-  height: 100vh;
+  height: 110vh;
   padding: 0 80px;
   @include flexbox();
   .content {
+    padding-top: 90px;
     position: relative;
     z-index: 2;
     // width: 50%;
@@ -24,43 +25,43 @@
       font-family: $font-family;
       font-size: 24px;
     }
-    img{
+    img {
       position: absolute;
       top: 55px;
       right: -80px;
-      @media only screen and (max-width:767px){
+      @media only screen and (max-width: 767px) {
         display: none;
       }
     }
     button {
       border: transparent;
       border-radius: 8px;
-      .sign {
-        a {
-          background-color: $color-dark;
-          color: $text-light;
-        }
-      }
-      .learn-more {
-        a {
-          background-color: transparent;
-          color: $color-dark;
-        }
-      }
+      padding: $buttonpad;
       a {
-        padding: $buttonpad;
         text-decoration: none;
         font-family: $font-family;
         font-size: 18px;
       }
     }
+    .sign {
+      background-color: $color-dark;
+      a {
+        color: $text-light;
+      }
+    }
+    .learn-more {
+      background-color: transparent;
+      border: 1px solid rgb(235, 235, 235);
+      a {
+        color: $color-dark;
+      }
+    }
   }
-  @media only screen and (max-width:767px){
+  @media only screen and (max-width: 767px) {
     display: block;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    height: 130vh;
-    
+    height: 100vh;
   }
 }

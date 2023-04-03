@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./scss/main.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -16,7 +16,7 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
+    <header class="container-fluid">
       <nav>
         <h3>Quickly.</h3>
         <ul>
@@ -146,16 +146,21 @@
           <div class="left col col-12 col-md-6">
             <h2 class=" mb-4">Start your free trial</h2>
             <form action="#">
-              <input type="checkbox">
-              <label for="">All features</label>
-              <input type="checkbox">
-              <label for="">Unlimited projects</label>
-              <input type="checkbox">
-              <label for="">Free onboarding</label>
-              <input type="checkbox">
-              <label for="">No payment needed</label>
+              <div>
+                <input type="checkbox">
+                <label for="">All features</label>
+                <input type="checkbox">
+                <label for="">Unlimited projects</label><br>
+              </div>
+              <div>
+                <input type="checkbox">
+                <label for="">Free onboarding</label>
+                <input type="checkbox">
+                <label for="">No payment needed</label><br>
+              </div>
               <div class="email-input mt-4">
-                <img src="./images/Input _Email.svg" alt="email">
+                <input class="email" type="email" required placeholder="Enter your email">
+                <input class="signbtn" type="submit" value="Sign Up">
               </div>
             </form>
           </div>
